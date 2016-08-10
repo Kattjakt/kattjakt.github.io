@@ -1,3 +1,7 @@
 <div class="wrapper">
-  <photo [data]="photo" *ngFor="let photo of photos" class="photo"></photo>
+  <div class="overlay">
+    <section (click)="previous()" class="previous"></section>
+    <section (click)="next()" class="next"></section>
+  </div>
+  <photo [data]="photo" [hidden]="photo !== photos[index]" *ngFor="let photo of photos" class="photo"></photo>
 </div>
