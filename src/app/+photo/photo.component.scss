@@ -1,0 +1,31 @@
+@import "../typography";
+
+.fade, .photo {
+  height: 100%;
+  width: 100%;
+}
+
+.photo {
+  background-size: cover;
+  background-position: center center;
+}
+
+.fade {
+  transition: background-color 0.1s ease-in-out;
+  padding: 10px;
+
+  > p {
+    transition: color 0.1s ease-in-out;
+    color: transparent;
+    display: none;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+
+    > p {
+      color: white;
+      display: block;
+    }
+  }
+}
