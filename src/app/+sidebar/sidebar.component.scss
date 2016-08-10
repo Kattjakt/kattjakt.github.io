@@ -10,36 +10,6 @@
   }
 }
 
-
-section {
-  display: none !important;
-
-  display: flex;
-  width: 80px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-
-  > div {
-    width: 20px;
-    height: 50px;
-    transform: skew(-20deg);
-  }
-
-  .r {
-    height: 74px;
-    background-color: #CC333F;
-  }
-
-  .g {
-    margin-left: 4px;
-    background-color: #EDC951;
-  }
-
-  .b {
-    background-color: #EB6841;
-  }
-}
-
 .wrapper {
   height: 100vh;
   width: 220px;
