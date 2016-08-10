@@ -1,7 +1,7 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
 import { GalleryComponent } from './+gallery/gallery.component';
-import { PhotoComponent } from './+photo/photo.component';
+import { ProjectsComponent } from './+projects/projects.component';
 
 const routes: RouterConfig = [
   {
@@ -9,10 +9,13 @@ const routes: RouterConfig = [
     component: GalleryComponent
   },
   {
+    path: 'projects',
+    component: ProjectsComponent
+  },
+  {
     path: '',
     redirectTo: 'gallery',
     pathMatch : 'full'
-    //component: PhotoComponent
   }
 ];
 
