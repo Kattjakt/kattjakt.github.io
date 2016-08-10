@@ -13,7 +13,43 @@
   <link rel="stylesheet" type="text/css" href="app/global.css">
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <app-root>
+    <div class="wrapper">
+      <div id="spinner"></div>
+    </div>
+
+    <style>
+      #spinner {
+        width: 20px;
+      }
+
+      app-root > .wrapper {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+
+    <script>
+      let s = document.getElementById('spinner');
+      let index = 0;
+      let steps = [
+        '    ',
+        '.   ',
+        '..  ',
+        '... ',
+        '..  ',
+        '.   ',
+        ''
+      ];
+
+      setInterval(() => {
+        if (index == steps.length) return;
+        s.innerHTML = steps[index++]
+      }, 300)
+    </script>
+  </app-root>
 
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
