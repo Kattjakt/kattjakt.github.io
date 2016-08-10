@@ -12,7 +12,7 @@
 
 .wrapper {
   height: 100vh;
-  width: 220px;
+  padding: 30px;
 
   display: flex;
   justify-content: center;
@@ -34,7 +34,6 @@
 
 .link {
   display: block;
-  margin-left: 20px;
   color: #D0D0D0;
 
   font-weight: 500;
@@ -56,8 +55,6 @@
 }
 
 .details {
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 10px;
   border-top: 1px solid lightgrey;
 
