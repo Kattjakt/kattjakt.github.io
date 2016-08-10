@@ -3,11 +3,9 @@ import { Photo } from '../models/photo.model';
 
 @Injectable()
 export class Manager {
+  photos: Photo[];
+
   constructor () {
-
-  }
-
-  getPhotos () {
     let photos = [
       {
         description: 'asd fgr rge f',
@@ -107,8 +105,12 @@ export class Manager {
       }
     ];
 
-    return photos.map(p => {
+    this.photos = photos.map(p => {
       return new Photo(p.description, p.url)
     });
+  }
+
+  getPhotos () {
+    return this.photos;
   }
 }

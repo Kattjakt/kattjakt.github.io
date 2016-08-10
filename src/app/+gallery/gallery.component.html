@@ -2,6 +2,8 @@
   <div class="overlay">
     <section (click)="previous()" class="previous"></section>
     <section (click)="next()" class="next"></section>
+
+    <span class="index">{{ index + 1 }}/{{ photos.length }}</span>
   </div>
   <photo [data]="photo" [hidden]="photo !== photos[index]" *ngFor="let photo of photos" class="photo"></photo>
 </div>

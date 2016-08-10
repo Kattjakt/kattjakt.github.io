@@ -1,7 +1,6 @@
 import { Component }      from '@angular/core';
 import { Photo }          from '../models/photo.model';
 import { Manager }        from '../services/manager.service';
-
 import { PhotoComponent } from '../+photo/photo.component';
 
 @Component({
