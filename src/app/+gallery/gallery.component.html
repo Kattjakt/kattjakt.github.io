@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="overlay">
-    <section (click)="previous()" class="previous"></section>
-    <section (click)="next()" class="next"></section>
+    <section [hidden]="index === 0" (click)="previous()" class="previous"></section>
+    <section [hidden]="index === photos.length - 1" (click)="next()" class="next"></section>
 
     <span class="index">{{ index + 1 }}/{{ photos.length }}</span>
   </div>
