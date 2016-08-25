@@ -9,10 +9,16 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'chaffle': 'vendor/chaffle/chaffle.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'chaffle': {
+    format: 'cjs',
+    defaultExtension: 'js',
+    main: 'chaffle.js'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////

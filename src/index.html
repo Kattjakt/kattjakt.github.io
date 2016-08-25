@@ -13,44 +13,7 @@
   <link rel="stylesheet" type="text/css" href="app/global.css">
 </head>
 <body>
-  <app-root>
-    <div class="wrapper">
-      <div id="spinner"></div>
-    </div>
-
-    <style>
-      #spinner {
-        width: 40px;
-        font-size: 40px;
-      }
-
-      app-root > .wrapper {
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-
-    <script>
-      let s = document.getElementById('spinner');
-      let index = 0;
-      let steps = [
-        '    ',
-        '.   ',
-        '..  ',
-        '... ',
-        '..  ',
-        '.   ',
-        ''
-      ];
-
-      setInterval(() => {
-        if (index == steps.length) return;
-        s.innerHTML = steps[index++]
-      }, 300)
-    </script>
-  </app-root>
+  <app-root></app-root>
 
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>

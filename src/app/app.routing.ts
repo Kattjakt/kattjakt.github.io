@@ -19,10 +19,10 @@ const routes: RouterConfig = [
     component: ProjectsComponent
   },
   {
-    path: '**',
-    redirectTo: 'gallery',
+    path: '',
+    redirectTo: 'gallery/1',
     pathMatch : 'full'
-  }
+  },
 ];
 
 export const APP_ROUTER_PROVIDERS = [
